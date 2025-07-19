@@ -28,12 +28,14 @@ git clone https://github.com/Angelmmc/leetcode-java.git
 cd leetcode-java
 ```
 
-3. Compile a program of your choice (output will go to bin/)
+##  Usage
+
+1. Compile a program of your choice (output will go to bin/)
 ```bash
 javac -d bin src/leetcode/easy/TwoSum.java
 ```
 
-4. Run the program
+2. Run the program
 ```bash
 java -cp bin leetcode.easy.TwoSum
 ```

@@ -41,4 +41,4 @@ java -cp bin leetcode.easy.TwoSum
 ```
 
 ## License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.

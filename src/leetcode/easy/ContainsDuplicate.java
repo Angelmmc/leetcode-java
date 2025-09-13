@@ -1,3 +1,7 @@
+/* 
+ https://leetcode.com/problems/contains-duplicate/
+*/
+
 package leetcode.easy;
 
 import java.util.HashMap;

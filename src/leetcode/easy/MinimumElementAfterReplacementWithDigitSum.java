@@ -6,26 +6,15 @@ package leetcode.easy;
 public class MinimumElementAfterReplacementWithDigitSum {
 
     public static int Solution(int[] nums) {
-        String[] stringNums = intArrayToStringArray(nums);
-        return getMinimumElement(stringNums);
-    }
-
-    private static String[] intArrayToStringArray(int[] nums) {
-        String[] stringNums = new String[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            String string = String.valueOf(nums[i]);
-            stringNums[i] = string;
-        }
-        return stringNums;
-    }
-
-    private static int getMinimumElement(String[] nums) {
         int min = Integer.MAX_VALUE;
-        for (String s : nums) {
+        for (int num : nums) {
             int sum = 0;
-            for (char c : s.toCharArray()) {
-                sum += Character.getNumericValue(c);
+            do {
+                sum += num % 10;
+                num /= 10;
             }
+            while (num != 0);
+
             if (sum < min) {
                 min = sum;
             }

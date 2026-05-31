@@ -10,6 +10,7 @@ Each problem contains a single .java file with a main method that can be compile
 
 ## Built with
 <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" />
+<img src="https://img.shields.io/badge/IntelliJ IDEA-fd315d?style=for-the-badge&logo=intellij-idea&logoColor=white" />
 
 ##  Getting Started
 

@@ -15,7 +15,7 @@ Each problem contains a single .java file with a main method that can be compile
 
 ### Prerequisites
 - Git
-- Java SDK 17+ 
+- Java SDK 25+ 
 
 ###  Installation
 

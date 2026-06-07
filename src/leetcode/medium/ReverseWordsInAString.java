@@ -7,52 +7,44 @@ package leetcode.medium;
 public class ReverseWordsInAString {
 
     public static String solution(String s) {
-        char[] charArray = s.toCharArray();
-
-        int i = 0;
-        int j = charArray.length - 1;
-
+        char[] chars = s.toCharArray();
+        int j = chars.length - 1;
         StringBuilder resultString = new StringBuilder();
-        while (i < j) {
 
-
-            while (charArray[i] == ' ') {
-                i++;
-
-            }
-
-            StringBuilder strings = new StringBuilder();
-            while (charArray[i] != ' ') {
-                strings.append(charArray[i]);
-                i++;
-            }
-
-            while (charArray[j] == ' ') {
-                j--;
-            }
-
-            StringBuilder strings2 = new StringBuilder();
-            int wordEnd= j;
-            while (charArray[j] != ' ') {
-                j--;
-            }
-            int wordBegin = j + 1;
-
-            for (int k = wordBegin; k<= wordEnd; k++) {
-                strings2.append(charArray[k]);
-            }
-
-            resultString.append(strings2);
-            resultString.append(' ');
-            resultString.append(strings);
-
+        if (chars.length == 1) {
+            return s;
         }
 
+        while (j >= 0) {
+            final char SPACE = ' ';
+
+            while (j >= 0 && chars[j] == SPACE) {
+                j--;
+            }
+
+            int i = j;
+
+            while (i >= 0 && chars[i] != SPACE) {
+                i--;
+            }
+
+            StringBuilder auxString = new StringBuilder();
+            for (int k = i + 1; k <= j; k++) {
+                auxString.append(chars[k]);
+            }
+
+            j = i;
+
+            if (!resultString.isEmpty() && !auxString.isEmpty()) {
+                resultString.append(SPACE);
+            }
+
+            resultString.append(auxString);
+        }
         return resultString.toString();
     }
 
     static void main() {
-
-        System.out.println(ReverseWordsInAString.solution("hello my good man"));
+        System.out.println(ReverseWordsInAString.solution("  hello world  "));
     }
 }

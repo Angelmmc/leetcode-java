@@ -1,19 +1,21 @@
 package leetcode.easy;
 
+/**
+ * 392.
+ * <a href="https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75">Is Subsequence</a>
+ */
 public class IsSubsequence {
 
     public static boolean solution(String s, String t) {
         char[] sChars = s.toCharArray();
         char[] tChars = t.toCharArray();
-        StringBuilder sb = new StringBuilder();
-
-        for (int i = 0, j = 0; i < tChars.length && j < sChars.length; i++) {
+        int j = 0;
+        for (int i = 0; i < tChars.length && j < sChars.length; i++) {
             if (sChars[j] == tChars[i]) {
-                sb.append(tChars[i]);
                 j++;
             }
         }
-        return s.contentEquals(sb);
+        return j == sChars.length;
     }
 
     static void main() {

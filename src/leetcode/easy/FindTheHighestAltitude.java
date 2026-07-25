@@ -1,5 +1,9 @@
 package leetcode.easy;
 
+/**
+ * 1732.
+ * <a href="https://leetcode.com/problems/find-the-highest-altitude/description/?envType=study-plan-v2&envId=leetcode-75">Find the Highest Altitude</a>
+ */
 public class FindTheHighestAltitude {
     public static int largestAltitude(int[] gain) {
         int maxAltitude = 0;

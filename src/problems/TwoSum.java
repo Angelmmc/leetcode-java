@@ -2,7 +2,7 @@
 https://leetcode.com/problems/two-sum/
 */
 
-package leetcode.easy;
+package problems;
 
 import java.util.Arrays;
 

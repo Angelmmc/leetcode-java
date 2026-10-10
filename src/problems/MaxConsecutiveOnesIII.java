@@ -1,4 +1,4 @@
-package leetcode.medium;
+package problems;
 
 /**
  * 1004. <a href="https://leetcode.com/problems/max-consecutive-ones-iii/">Max Consecutive Ones III</a>

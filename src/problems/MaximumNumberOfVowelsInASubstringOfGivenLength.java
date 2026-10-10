@@ -1,4 +1,4 @@
-package leetcode.medium;
+package problems;
 
 /**
  * 1546.
@@ -38,7 +38,7 @@ public class MaximumNumberOfVowelsInASubstringOfGivenLength {
     static void main() {
         System.out.println(maxVowels("abciiidef", 3));
         System.out.println(maxVowels("aeiou", 2));
-        System.out.println(maxVowels("leetcode", 3));
+        System.out.println(maxVowels("problems", 3));
         System.out.println(maxVowels("rhythms", 4));
         System.out.println(maxVowels("a", 1));
         System.out.println(maxVowels("b", 1));

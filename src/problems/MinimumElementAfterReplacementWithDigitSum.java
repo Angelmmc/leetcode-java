@@ -1,4 +1,4 @@
-package leetcode.easy;
+package problems;
 
 /**
  * <a href="https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/description/?envType=problem-list-v2&envId=dengp0kr">Source: </a>

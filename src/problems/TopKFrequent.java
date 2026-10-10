@@ -2,7 +2,7 @@
 https://leetcode.com/problems/top-k-frequent-elements/
 */
 
-package leetcode.medium;
+package problems;
 
 import java.util.ArrayList;
 import java.util.Arrays;

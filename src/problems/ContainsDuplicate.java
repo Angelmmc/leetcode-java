@@ -2,7 +2,7 @@
  https://leetcode.com/problems/contains-duplicate/
 */
 
-package leetcode.easy;
+package problems;
 
 import java.util.HashMap;
 

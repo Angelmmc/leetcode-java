@@ -1,4 +1,4 @@
-package leetcode.medium;
+package problems;
 
 /**
  * 11.

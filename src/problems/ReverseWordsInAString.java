@@ -1,4 +1,4 @@
-package leetcode.medium;
+package problems;
 
 /**
  * 151. Reverse Words in a String
